@@ -1,0 +1,332 @@
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+  padding: 0em;
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.container-fluid{
+  padding-top: 58px !important;
+}
+.navbar
+{
+    font-family: 'Audiowide', cursive;
+    box-shadow: 0 0 25px rgba(0, 0,0, 0.5);
+}
+.nav-link{
+    color:black;
+    margin-left: 20px;
+    margin-right: auto;
+}
+.logo{
+    height: 25px;
+    width: 20px;
+    margin-left: 20px;
+    margin-top: 0em;
+    margin-bottom: 5px;
+}
+
+.sidebar {
+  z-index: 1;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  overflow: auto;
+  transition: left 0.5s ease;
+}
+
+
+.sidebar a, input, .dropdown-btn{
+  display: block;
+  color: black;
+  padding: 15px; 
+  font-size: 16px;
+  border: none;
+  height: auto;
+  border-right: 1.5px solid #f1f1f1;
+  outline: none;
+  text-decoration: none;
+  text-align: left;
+  }
+
+  .dropdown-btn{
+       background-color: white;
+   }
+  
+  .sidebar a:hover {
+    background-color: #6AC239; 
+    color:black;
+    width: 100%;
+  }
+  
+  .dropdown-container {
+    display: none;
+    color: #262626;
+    border: none;
+  }
+  
+  .fa-chevron-right{
+    float: right;
+    margin-top: 3px;
+  }
+
+  /*----right side body----*/
+  
+  #mainbody{
+    margin: 0 !important;
+    width: 100%;
+   
+
+  }
+  /*Text animation---*/
+ 
+  .text1{
+    letter-spacing: 2px;
+    color: #6AC239;
+    padding-bottom: .4rem;
+    margin-bottom: 50px;
+    background: #000000;
+    width: 100%;
+    position: absolute;
+  }
+
+  
+
+  /*@keyframes text{
+    0%{
+      color: black;
+      margin-bottom: 10px;
+
+    }
+    30%{
+      letter-spacing: 30px;
+      margin-bottom: 20px;
+    }
+    85%{
+      letter-spacing: 6px;
+      margin-bottom: 10px;
+    }
+  }
+  /*Text animation---*/
+  .foot{
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#6AC239;
+  }
+  .rightbody{
+    width: 100%;
+    padding: 0em;
+  }
+link{
+  margin-top: 10px;
+}
+
+
+  /* The popup form */
+  
+  .btn-primary{
+    background-color: #587AC2;
+  
+  }
+  .btn-primary:hover{
+    background-color: #364472;
+  }
+  .btn-danger{
+    opacity: .8;
+    margin-bottom: 20px;
+    
+  }
+.btn-light{
+  background-color: #E2E6EA;
+}
+.btn-light:hover{
+  background-color: lightgray;
+}
+  .btn-danger:hover{
+    opacity: 1;
+  }
+
+  .container input[type=text]{
+    width: 50%;
+    margin: 5px 0 22px;
+    margin-left: 28%;
+    background:white;
+    border-bottom:2px solid steelblue;
+  }
+.container input[type=text]:focus{
+    background-color:whitesmoke;
+    outline: none;
+  }
+  .modal{
+   height: auto !important;
+   padding: 5%;
+  
+  }
+  
+  .model-header{
+    flex: none !important;
+  }
+  .log{
+    text-align: center !important;
+    margin-left: 40%;
+    color:tomato;
+  }
+  .myclose{
+    float: right;
+    cursor: pointer;
+    outline: none;
+    font-size: 3em;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+    padding: 0;
+  }
+  
+
+#food{
+  margin-top:50px;
+}
+hr{
+  size:3px !important;
+}
+
+
+
+@media (max-width: 575.98px) { 
+.navbar
+{
+    font-family: 'Audiowide', cursive;
+    position: relative;
+}
+.container-fluid{
+  padding-top: 0px !important;
+}
+
+  #text1{
+    letter-spacing: 1px;
+    color: #6AC239;
+    background: #000000;
+    margin: 0px;
+    padding-bottom: .1rem;
+    font-size: 20px;
+    position: absolute;
+    text-shadow: 0 0 2px 1px #6AC239(35, 70%, 30%),
+                 0 0 4px 4px hsla(118, 100%, 55%, 0.5);
+    animation: text 3s 1;
+  }
+  #search{
+    margin-top: 0;
+  }
+  .foot{
+    width: 100%;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+  #text1{
+    letter-spacing: 1px;
+    color: #6AC239;
+    background: #000000;
+    margin: 0px;
+    padding: .5rem;
+    font-size: 28px;
+    position: absolute;
+    text-shadow: 0 0 2px 1px #6AC239(35, 70%, 30%),
+                 0 0 4px 4px hsla(118, 100%, 55%, 0.5);
+    animation: text 3s 1;
+  }
+.navbar
+{
+    font-family: 'Audiowide', cursive;
+    position: relative;
+}
+.container-fluid{
+  padding-top: 0 !important;
+}
+  .foot{
+    width: 100%;
+    color:#6AC239; 
+    font-size: 16px;
+    margin-left: 0;
+  }
+ }
+
+/* Medium devices (tablets, less than 992px)*/
+@media  (min-width: 768px) and (max-width: 991.98px) {
+  #text1{
+    letter-spacing: 1px;
+    color: #6AC239;
+    background: #000000;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    font-size: 34px;
+    position: absolute;
+    text-shadow: 0 0 2px 1px #6AC239(35, 70%, 30%),
+                 0 0 4px 4px hsla(118, 100%, 55%, 0.5);
+    animation: text 3s 1;
+  }
+  .sidebar a, input, .dropdown-btn{
+    font-size: 16px;
+  }
+  .navbar
+  {
+    width: 100%;
+  }
+  .container-fluid{
+    padding-top: 61px !important;
+  }
+  #search{
+    margin-top: 0;
+ }
+
+/* Large devices (desktops, less than 1200px)*/
+@media (min-width: 992 ){ 
+  .container-fluid{
+    padding-top: 61px !important;
+  }  
+}
+
+
+@media (min-width: 1920 ){
+.sidebar a, input, .dropdown-btn{
+  padding: 25px; 
+  font-size: 25px;
+  border: none;
+  height: auto;
+  }
+.fa-chevron-right{
+  margin-top: 6px;
+  }
+  .sidebar {
+    width: 25%;
+    text-align: center;
+
+  }
+  
+.rightbody{
+    width: 75%;
+  }
+#text1{
+  letter-spacing: 1px;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  font-size: 40px;
+  position: absolute;
+}
+
+}
+
+
+
+
+
+
